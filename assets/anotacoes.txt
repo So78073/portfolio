@@ -1,0 +1,14 @@
+(Commit rapido)
+
+git init
+git add .
+git commit -m "Inicio proj"
+git push -u origin main
+
+
+
+header
+
+sections
+
+footer
