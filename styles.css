@@ -290,7 +290,33 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 1000px) {
+    .carrer {
+        flex-direction: column;
+    }
 
+    .cardcarrer {
+        width: 100%;
+    }
+
+    .boxCarrer2 {
+        margin-left: 5vw;
+        margin-top: 2rem;
+
+    }
+
+    
+
+    .boxCarrer1 {
+        margin: 0px;
+        width: 90%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .separateCardCarrer {
+        width: 100%;
+        margin: 0px;
+    }
  
  }
 
@@ -325,31 +351,8 @@ body::-webkit-scrollbar {
         margin-top: 50px;
     }
 
-    .boxCarrer2 {
-        margin-left: 5vw;
-        margin-top: 2rem;
-
-    }
-
-    .carrer {
-        flex-direction: column;
-    }
-
-    .boxCarrer1 {
-        margin: 0px;
-        width: 90%;
-        align-self: center;
-        justify-self: center;
-    }
-
-    .separateCardCarrer {
-        width: 100%;
-        margin: 0px;
-    }
-    .cardcarrer {
-        width: 100%;
-        
-    }
+    
+    
 
     .skills {
         margin-left: 5vw;
