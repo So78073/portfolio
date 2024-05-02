@@ -1,13 +1,13 @@
 :root {
     --border-radius: 5px;
-    --gradiente: linear-gradient(to bottom, #1500ff, #0033ff);
+    --gradiente: linear-gradient(to left, #6557ff, #e600ff);
 }
 
 body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: rgb(39, 40, 42);
     color: aliceblue;
 
     font-family: "Sacramento", cursive;
@@ -61,15 +61,14 @@ body::-webkit-scrollbar {
     display: flex;
 }
 
-.apresentation p,h1{
-    margin-left: 50px;
+
+.apresentation  h1{
+    width: 90%;
+    margin-left: 55px;
 }
-
-
-
-.apresentation p {
-    width: 80%;
-    margin-left: 50px;
+.apresentation  p{
+    width: 90%;
+    margin-left: 55px;
 }
 
 .myPhoto {
@@ -108,6 +107,7 @@ body::-webkit-scrollbar {
 
 }
 
+
 .SkillCard {
     width: 100%;
     height: auto;
@@ -139,26 +139,29 @@ body::-webkit-scrollbar {
 
 .carrer {
     display: flex;
-
+    margin-top: 2rem;
+    
     width: 100%;
-    height: 400px;
-
     gap: 10px;
 }
+
 .boxCarrer1 {
     display: flex;
     gap: 10px;
-    width: 100%;
-    margin-left: 30px;
+    margin-left: 4.3vw;
 }
 
 .boxCarrer2 {
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    width: 100%;
-    
+    width: 100%; 
+    margin-left: 20px;
 }
 
+.boxCarrer2 h1{
+    margin: 0px;  
+}
 
 .separateCardCarrer {
     display: flex;
@@ -166,11 +169,22 @@ body::-webkit-scrollbar {
     gap: 10px;
 }
 
+
 .cardcarrer {
+    display: flex;
     width: 200px;
-    height: 200px;
+    height: 100px;
     background-image: var(--gradiente);
     border-radius: var(--border-radius);
+}
+
+
+.cardcarrer h1{
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
 }
 
 
@@ -179,20 +193,30 @@ body::-webkit-scrollbar {
 
 .skills {
     display: flex;
-    width: 90%;
+    width: 100%;
     gap: 5px;
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 2rem;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+}
+
+.skills h1{
+    width: 95%;
 }
 
 .skilldivConfigure {
     display: flex;
     width: 100%;
     gap: 10px;
+    flex-direction: column;
 }
 
 .skilldivConfigure2 {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    gap: 20px;
 }
 
 .ResponsiveDivConfigurations {
@@ -211,9 +235,8 @@ body::-webkit-scrollbar {
 }
 
 .card img{
-    width: 30px;
-    height: 30px;
-
+    max-width: 30px;
+    max-height: 30px;
     margin-right: 1%;
 }
 
@@ -233,7 +256,7 @@ body::-webkit-scrollbar {
 
 
 .PorcentSkill::-webkit-meter-optimum-value {
-    background-image: linear-gradient(to right, #00aacc, #0077cc); /* Gradiente verde para a parte preenchida */
+    background-image: var(--gradiente); /* Gradiente verde para a parte preenchida */
     border-radius: 5px;
 }
 
@@ -259,8 +282,6 @@ body::-webkit-scrollbar {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 1080px) {
     
-   
-   
   .OrganizateDiv {
     align-self: center;
     justify-self: center;
@@ -278,43 +299,97 @@ body::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
     }
-
-    .apresentation p,h1 {
-        width: 80%;
-        margin-left: 20px;
+    .apresentation h1{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
     }
-
+    .apresentation  p{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
     .myPhoto {
         margin-left: 0px;
         width: 50%;
     }
-
     .MySkills {
         flex-direction: column;
     }
 
     .Works {
-        margin-left: 25px;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        margin: 0px;
+        margin-top: 50px;
     }
 
-    
+    .boxCarrer2 {
+        margin-left: 5vw;
+        margin-top: 2rem;
+
+    }
+
+    .carrer {
+        flex-direction: column;
+    }
+
+    .boxCarrer1 {
+        margin: 0px;
+        width: 90%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .separateCardCarrer {
+        width: 100%;
+        margin: 0px;
+    }
+    .cardcarrer {
+        width: 100%;
+        
+    }
+
+    .skills {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .skills h1{
+        margin: 0px;
+        margin-bottom: 1rem;
+    }
+
 
 }
 
 @media (max-width: 650px) {
     
-
 }
 
 @media (max-width: 555px) {
+    .skills{
+        justify-content: center;
+        align-content: center;
+        
+    }
+ }
+
+ @media (max-width: 390px) {
+
+ }
+
+ @media (max-width: 280px) {
+    .cardcarrer {
+        height: 100px;
+    }
+    
+ }
+@media (max-width: 450) {
     
 
  }
 
-
- @media (min-width: 555px) {
-    
- }
 
  @media (min-width: 1080px) {
     .Works img {
@@ -333,15 +408,17 @@ body::-webkit-scrollbar {
 
 /* GLOBAL --------------------------------------------------------------------------------------------------------------------------------- */
 section {
-    width: 100%;
-    height: 100%;
+    width: 90%;
     display: flex;
 
     justify-content: center;
     align-content: center;
 
-    margin-top: 2rem;
-    margin-bottom: 15px;
+    justify-self: center;
+    align-self: center;
+    padding: 0px;
+    margin-top: 1rem;
+
     
 }
 
@@ -358,7 +435,12 @@ header {
   }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: start;
+
+    background: linear-gradient(to right, #ffffff, #c2c2c2) text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
  
