@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="hidden">
         <div class="hub">
             <button class="BtHub"></button>
             <button class="BtHub"></button>
@@ -21,12 +21,12 @@
         </div>
     </header>
 
-    <section>
+    <section class="hidden">
         <div class="apresentation">
             <img src="/assets/myPhoto.png" class="myPhoto">
 
             <div>
-                <h1>Hello , meu nome é Pedro Soares <BR>Full-Stack Developer</h1>
+                <h1>Pedro Soares de Assis<BR>Full-Stack Developer</h1>
                 <p>Sou apaixonado por tecnologia, carros, design e tudo o que for complexo. Estou sempre aprendendo coisas novas, pois aprender é meu vício!</p>
                 
                 <div class="Works">
@@ -39,35 +39,35 @@
         </div>
     </section>
 
-    <section>
+    <section class="hidden">
         <div class="MySkills">
             <div class="SkillCard">
                 <img src="/assets/icons/devIcon.png" alt="">
-                <h1>Full-Stack Developer</h1>
+                <h1>Full-Stack</h1>
                 <p>Sou um programador experiente capaz de realizar qualquer projeto, desde um simples site até mesmo projetos complexos envolvendo API ou banco de dados. Possuo conhecimento em diversas linguagens e ferramentas para entregar o melhor desempenho possível</p>
             </div>
             <div class="SkillCard">
                 <img src="/assets/icons/designIcon.png" alt="">
-                <h1>Design e Artes</h1>
-                <p>Sobre Design: Consigo criar e modificar qualquer imagem. Também tenho experiência como artista gráfico freelancer na GraficaArts LTDA. Além disso, possuo habilidades em design 3D e na criação de sites responsivos.</p>
+                <h1>Design</h1>
+                <p>Consigo criar e modificar qualquer imagem. Também tenho experiência como artista gráfico freelancer na GraficaArts LTDA. Além disso, possuo habilidades em design 3D e na criação de sites responsivos.</p>
             </div>
             <div class="SkillCard">
                 <img src="/assets/icons/SocIcon.png" alt="">
-                <h1>SOC e Segurança</h1>
-                <p>Sobre segurança de código: Estudo métodos de segurança intensamente, o que me permite garantir trocas de informações seguras em minhas aplicações. Além disso, tenho interesse em aprender técnicas de pentest usando o Kali para verificar a segurança de servidores e sites.</p>
+                <h1>Segurança</h1>
+                <p>Estudo métodos de segurança intensamente, o que me permite garantir trocas de informações seguras em minhas aplicações. Além disso, tenho interesse em aprender técnicas de pentest usando o Kali para verificar a segurança de servidores e sites.</p>
             </div>
 
         </div>
     </section>
 
-    <section>
+    <section class="hidden">
 
         <div class="carrer">
 
             <div class="boxCarrer1">
                 <div class="separateCardCarrer">
                     <div class="cardcarrer"><h1>11<br>Anos de experiência</h1></div>
-                    <div class="cardcarrer"><h1>30+<br>Contribuições</h1></div>
+                    <div class="cardcarrer"><h1>200+<br>Contribuições</h1></div>
                 </div>
                 <div class="separateCardCarrer">
                     <div class="cardcarrer"><h1>19+<br>dominio de ferramentas</h1></div>
@@ -84,7 +84,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="hidden">
 
         <div class="skills">
             <h1>Skills e pontos fortes </h1>
@@ -124,23 +124,31 @@
        
     </section>
 
-    <section>
+    <section class="hidden">
         <div class="ProjectsDaddyDiv">
-            
-            
-            
             <div class="Project" id="Project">
 
                 <div class="hubProjet">
                     <button class="btProjects" mode="R" style="transform: scaleX(-1);"><img src="/assets/icons/seta.png"></button>
-                    <div class="TittleConteinerProjetct"><h1>title</h1></div>
+                    <div class="TittleConteinerProjetct"></div>
                     <button class="btProjects" mode="L"><img src="/assets/icons/seta.png"></button>
                 </div>
 
                 <div class="ProjectDivShow">
 
-                    <div class="LeftProject"></div>
-                    <div class="RightProject"></div>
+                    <div class="sideProject">
+                        <h1>Tituto do projeto</h1>
+                        <h2>Sobre o projeto</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eligendi veritatis nostrum et illo quidem pariatur expedita adipisci beatae qui quaerat eos, maiores nulla non consectetur amet quam aut aperiam!</p>
+                        
+                        <h2 class="classTextRevers">tecnologias usadas</h2>
+                        <p class="classTextRevers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eligendi veritatis nostrum et illo quidem pariatur expedita adipisci beatae qui quaerat eos, maiores nulla non consectetur amet quam aut aperiam!</p>
+                    
+                    </div>
+                    <div class="sideProject">
+                        <div class="ImgProject"></div>
+                        <button class="btShowProject" onclick="test()"><p>Ver Mais</p></button>
+                    </div>
 
 
                 </div>

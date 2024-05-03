@@ -126,10 +126,16 @@ body::-webkit-scrollbar {
     height: 80px;
 }
 
-.SkillCard h1, p{
+.SkillCard h1{
     text-align: center;
-    width: 90%;
-    margin-left: 0px;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 3rem;
+}
+.SkillCard p{
+    text-align: center;
+    width: 100%;
+    margin: 0px;
 }
 .SkillCard p {
     margin-bottom: 30px;
@@ -151,6 +157,7 @@ body::-webkit-scrollbar {
     margin-left: 4.3vw;
 }
 
+
 .boxCarrer2 {
     display: flex;
     flex-direction: column;
@@ -161,7 +168,9 @@ body::-webkit-scrollbar {
 
 .boxCarrer2 h1{
     margin: 0px;  
+    width: 90%;
 }
+
 
 .separateCardCarrer {
     display: flex;
@@ -176,13 +185,16 @@ body::-webkit-scrollbar {
     height: 100px;
     background-image: var(--gradiente);
     border-radius: var(--border-radius);
+
+    justify-content: center;
+    align-content: center;
 }
 
 
 .cardcarrer h1{
     font-size: 1.4em;
     text-align: center;
-    width: 100%;
+    width: 90%;
     align-self: center;
     justify-self: center;
 }
@@ -280,13 +292,10 @@ body::-webkit-scrollbar {
 .ProjectsDaddyDiv {
     display: flex;
     width: 100%;
-    height: 500px;
-
-    
     margin-top: 3rem;
     margin-bottom: 3rem;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     
 }
 
@@ -299,6 +308,9 @@ body::-webkit-scrollbar {
 
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
 }
 
 .hubProjet {
@@ -347,13 +359,79 @@ body::-webkit-scrollbar {
 }
 /* parte principal dos projetos */
 .ProjectDivShow {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    gap: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.sideProject {
     width: 100%;
     height: 100%;
-    margin-top: 20px;
 
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
 }
+
+.sideProject h1, p{
+    width: 90%;
+
+}
+
+.classTextRevers {
+    width: 92%;
+    
+    text-align: end;
+    
+}
+
+.ImgProject {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: var(--border-radius);
+    margin-top: 30px;
+}
+
+.btShowProject {
+    width: 100%;
+    height: 50px;
+    border: none;
+
+    background-image: var(--gradiente);
+    border-radius: var(--border-radius);
+    margin-bottom: 3rem;
+    border: 3px solid rgba(0, 0, 0, 0.307);
+
+}
+.btShowProject p {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+
+    background: linear-gradient(to right, #ffffff, #c2c2c2) text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.btShowProject:hover {
+    scale: 1.03;
+}
+
+
 
 
 /* GLOBAL --------------------------------------------------------------------------------------------------------------------------------- */
@@ -381,6 +459,10 @@ header {
  p {
     font-size: 1em;
     text-align: start;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
 
 h1 {
@@ -391,5 +473,9 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
  

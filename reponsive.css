@@ -85,7 +85,16 @@
   }
   
   @media (max-width: 650px) {
-      
+    .ProjectDivShow {
+        flex-direction: column;
+    }
+    .ImgProject {
+        height: 250px;
+    }
+
+    .sideProject {
+        margin: 0px;
+    }
   }
   
   @media (max-width: 555px) {
@@ -117,5 +126,4 @@
           margin-top: 50px;
       }
     }
-  
   
