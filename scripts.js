@@ -15,8 +15,6 @@ elem.forEach( function (e) {
 })
 
 
-
-
 let color = ['#e600ff', '#6557ff']
 
 document.addEventListener('click', function (e) {

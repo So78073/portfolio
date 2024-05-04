@@ -1,91 +1,73 @@
 @media (max-width: 1080px) {
-    
     .OrganizateDiv {
       align-self: center;
       justify-self: center;
       }
-  
   }
-  
-  @media (max-width: 1000px) {
-      .carrer {
-          flex-direction: column;
-      }
-  
-      .cardcarrer {
-          width: 100%;
-      }
-  
-      .boxCarrer2 {
-          margin-left: 5vw;
-          margin-top: 2rem;
-  
-      }
-  
-      
-  
-      .boxCarrer1 {
-          margin: 0px;
-          width: 90%;
-          align-self: center;
-          justify-self: center;
-      }
-  
-      .separateCardCarrer {
-          width: 100%;
-          margin: 0px;
-      }
-   
-   }
-  
-   @media (max-width: 768px) {
-      .apresentation {
-          display: flex;
-          flex-direction: column;
-      }
-      .apresentation h1{
-          margin-left: 0px;
-          width: 100%;
-          text-align: center;
-      }
-      .apresentation  p{
-          margin-left: 0px;
-          width: 100%;
-          text-align: center;
-      }
-      .myPhoto {
-          margin-left: 0px;
-          width: 50%;
-          margin-top: 20px;
-      }
-      .MySkills {
-          flex-direction: column;
-      }
-  
-      .Works {
-          width: 100%;
-          align-content: center;
-          justify-content: center;
-          margin: 0px;
-          margin-top: 50px;
-      }
-  
-      
-      
-  
-      .skills {
-          margin-left: 5vw;
-          margin-right: 5vw;
-      }
-      .skills h1{
-          margin: 0px;
-          margin-bottom: 1rem;
-      }
-  
-  
-  }
-  
-  @media (max-width: 650px) {
+
+@media (max-width: 1000px) {
+    .carrer {
+        flex-direction: column;
+    }
+    .cardcarrer {
+        width: 100%;
+    }
+    .boxCarrer2 {
+    margin: 2rem 0px 0px 5vw;
+    }
+    .boxCarrer1 {
+        margin: 0px;
+        width: 90%;
+        align-self: center;
+        justify-self: center;
+    }
+    .separateCardCarrer {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .apresentation {
+        display: flex;
+        flex-direction: column;
+    }
+    .apresentation h1{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .apresentation  p{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .myPhoto {
+        margin: 20px 0px 0px 0px;
+        width: 50%;
+
+    }
+    
+    .Works {
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        margin: 50px 0px 0px 0px;
+    }
+
+    .skills {
+    margin: 0px 5vw 0px 5vw;
+    }
+    .skills h1{
+        margin: 0px 0px 1rem 0px;
+    }
+    .MySkills {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 650px) {
     .ProjectDivShow {
         flex-direction: column;
     }
@@ -96,35 +78,35 @@
     .sideProject {
         margin: 0px;
     }
-  }
-  
-  @media (max-width: 555px) {
-      .skills{
-          justify-content: center;
-          align-content: center;
-          
-      }
-   }
-  
-   @media (max-width: 355px) {
-      .boxCarrer1 {
-          flex-direction: column;
-      }
-  
-   }
-  
-  
-   @media (min-width: 1080px) {
-      .Works img {
-          width: 10%;
-      }
-  
-      .myPhoto {
-          margin-left: 50px;
-      }
-      .apresentation {
-          display: flex;
-          margin-top: 50px;
-      }
+}
+
+@media (max-width: 555px) {
+    .skills{
+        justify-content: center;
+        align-content: center;
+        
     }
-  
+}
+
+@media (max-width: 355px) {
+    .boxCarrer1 {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 1080px) {
+    .Works img {
+        width: 10%;
+    }
+
+    .myPhoto {
+        margin-left: 50px;
+    }
+
+    .apresentation {
+        display: flex;
+        margin-top: 50px;
+    }
+}
+

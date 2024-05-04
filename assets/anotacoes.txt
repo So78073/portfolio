@@ -2,7 +2,7 @@
 
 git init
 git add .
-git commit -m "02/05/2024 80% do caminho andado"
+git commit -m "02/05/2024 85% do caminho andado"
 git push -u origin main
 
 
