@@ -1,7 +1,8 @@
 :root {
     --border-radius: 5px;
-    --gradiente: linear-gradient(to left, #6557ff, #e600ff);
-    --gradiente2Pronject: linear-gradient(to left, #6557ff, #e600ff);
+    --gradiente: linear-gradient(to left, #6557ff, #d000ff);
+    --gradiente2Pronject: linear-gradient(to left, #6557ff, #d000ff);
+    --sombra: drop-shadow(0 0 5px #00000073);
 }
 
 
@@ -19,11 +20,12 @@ body {
 
 
 body::-webkit-scrollbar {
-    width: 10px; 
+    width: 5px; 
+    background-color: #00000000;
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: var(--bg-color); 
+    background-image: var(--gradiente); 
     border-radius: 10px; 
   }
   
@@ -37,13 +39,25 @@ body::-webkit-scrollbar {
 
 /* SECTION 001 ---------------------------------------------------------------------------------------------------------------------------------*/
 .hub {
-    margin-top: 5px;
+    margin: 5px;
     width: 80%;
     display: flex;
     gap: 10px;
-    overflow: hidden;
+    
 
 
+}
+
+.BtHub {
+    width: 100%;
+    height: 25px;
+    border: none;
+
+    background: var(--gradiente);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .hub a{
@@ -55,17 +69,11 @@ body::-webkit-scrollbar {
     font-optical-sizing: auto;
     font-style: normal;
     margin: 0px;
-    font-size: 1.3em;
+
+    
 }
 
-.BtHub {
-    width: 100%;
-    height: 30px;
-    border: none;
 
-    background: var(--gradiente);
-    border-radius: var(--border-radius);
-}
 
 /* SECTION 002 ---------------------------------------------------------------------------------------------------------------------------------*/
 .apresentation {
@@ -98,7 +106,7 @@ body::-webkit-scrollbar {
     margin-left: 50px;
     margin-top: 50px;
 }
-.MyProfission {
+.destak {
     background: var(--gradiente) text;
     -webkit-background-clip: text;
     background-clip: text;
@@ -113,6 +121,7 @@ body::-webkit-scrollbar {
     width: 10%;
     height: auto;
     border-radius: 100%;
+    filter: var(--sombra);
 }
 
 /* SECTION 003 ---------------------------------------------------------------------------------------------------------------------------------*/
@@ -137,9 +146,8 @@ body::-webkit-scrollbar {
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
-
     align-items: center;
-    
+    filter: var(--sombra);
 
 }
 
@@ -156,7 +164,7 @@ body::-webkit-scrollbar {
 }
 .SkillCard p{
     text-align: center;
-    width: 100%;
+    width: 90%;
     margin: 0px;
 }
 .SkillCard p {
@@ -188,11 +196,10 @@ body::-webkit-scrollbar {
     margin-left: 20px;
 }
 
-.boxCarrer2 h1{
+.boxCarrer2 h1, p {
     margin: 0px;  
     width: 90%;
 }
-
 
 .separateCardCarrer {
     display: flex;
@@ -207,7 +214,7 @@ body::-webkit-scrollbar {
     height: 100px;
     background-image: var(--gradiente);
     border-radius: var(--border-radius);
-
+    filter: var(--sombra);
     justify-content: center;
     align-content: center;
 }
@@ -219,6 +226,8 @@ body::-webkit-scrollbar {
     width: 90%;
     align-self: center;
     justify-self: center;
+
+    
 }
 
 
@@ -266,6 +275,7 @@ body::-webkit-scrollbar {
 
     align-items: center;
     justify-items: center;
+    filter: var(--sombra);
 }
 
 .card img{
@@ -277,6 +287,10 @@ body::-webkit-scrollbar {
 .card h2 {
     font-size: 1.2em;
     margin-left: 1%;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .PorcentSkill {
@@ -329,7 +343,7 @@ body::-webkit-scrollbar {
 
     display: flex;
     flex-direction: column;
-
+    filter: var(--sombra);
     align-items: center;
     justify-items: center;
 }
