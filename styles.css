@@ -1,7 +1,9 @@
 :root {
     --border-radius: 5px;
     --gradiente: linear-gradient(to left, #6557ff, #e600ff);
+    --gradiente2Pronject: linear-gradient(to left, #6557ff, #e600ff);
 }
+
 
 body {
     width: 100%;
@@ -9,10 +11,6 @@ body {
     padding: 0px;
     background-color: rgb(39, 40, 42);
     color: aliceblue;
-
-    font-family: "Sacramento", cursive;
-    font-weight: 400;
-    font-style: normal;
 
     overflow-x: hidden;
     display: flex;
@@ -45,6 +43,19 @@ body::-webkit-scrollbar {
     gap: 10px;
     overflow: hidden;
 
+
+}
+
+.hub a{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0px;
+    font-size: 1.3em;
 }
 
 .BtHub {
@@ -78,6 +89,7 @@ body::-webkit-scrollbar {
     justify-self: center;
     align-self: center;
     margin-left: 50px;
+    filter: drop-shadow(0 0 20px #a357ff);
 }
 
 .Works {
@@ -86,9 +98,19 @@ body::-webkit-scrollbar {
     margin-left: 50px;
     margin-top: 50px;
 }
+.MyProfission {
+    background: var(--gradiente) text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 .Works img {
-    width: 15%;
+    width: 10%;
     height: auto;
     border-radius: 100%;
 }
@@ -302,8 +324,7 @@ body::-webkit-scrollbar {
 .Project {
     width: 100%;
     height: 100%;
-    background-image: var(--gradiente);
-    border-radius: var(--border-radius);
+    background-image: var(--gradiente2Pronject);
     border-radius: var(--border-radius);
 
     display: flex;
@@ -379,8 +400,15 @@ body::-webkit-scrollbar {
     margin-bottom: 30px;
 }
 
-.sideProject h1, p{
+.sideProject h1{
     width: 90%;
+
+}
+.sideProject h2{
+    width: 90%;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 
 }
 
