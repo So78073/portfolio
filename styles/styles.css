@@ -46,7 +46,6 @@ body::-webkit-scrollbar {
 
 .BtHub {
     width: 100%;
-    height: 25px;
     border: none;
     background: var(--gradiente);
     border-radius: var(--border-radius);
@@ -63,7 +62,7 @@ body::-webkit-scrollbar {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-    margin: 0px;
+    margin-top: 10px;
 }
 
 /* SECTION 002 ---------------------------------------------------------------------------------------------------------------------------------*/
