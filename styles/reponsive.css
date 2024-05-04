@@ -27,6 +27,12 @@
     }
 }
 
+@media (max-width: 850px) {
+    .imgProjSecond {
+        display: flex;
+    }
+}
+
 @media (max-width: 768px) {
     .apresentation {
         display: flex;
