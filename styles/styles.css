@@ -339,9 +339,8 @@ body::-webkit-scrollbar {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 2em;
-
- 
 }
+
 
 .btProjects {
     width: auto;
@@ -513,16 +512,45 @@ body::-webkit-scrollbar {
 .ContraCard h1{
     text-align: center;
     width: 100%;
-    margin: 0px 0px 3rem 0px;
-
+    margin: 0px 0px 0rem 0px;
 }
+
+
 .ContraCard p{
     text-align: center;
-    width: 90%;
-    margin: 0px;
+    width: 80%;
+    height: 100%;
+    margin: 10px 0px 10px;
 }
-.ContraCard p {
-    margin-bottom: 30px;
+
+.price {
+    color: aliceblue;
+    font-size: 1.5em;
+    justify-self: end;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.xPriceRight {
+    color: aliceblue;
+    font-size: 0.9em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.recomendado {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    color: #ffd700;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5em;
 }
 
 /* GLOBAL */
