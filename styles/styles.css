@@ -4,13 +4,14 @@
     --gradiente2Pronject: linear-gradient(to left, #6557ff, #d000ff);
     --sombra: drop-shadow(0 0 5px #00000073);
     --textGradientColor: linear-gradient(to right, #ffffff, #f1f1f1) text;
+    --background: linear-gradient(to left, #27282a, #27282a); /*27282a*/
 }
 
 body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(39, 40, 42);
+    background-image: var(--background);
     color: aliceblue;
     overflow-x: hidden;
     display: flex;
@@ -342,9 +343,6 @@ body::-webkit-scrollbar {
  
 }
 
-
-
-
 .btProjects {
     width: auto;
     height: 100%;
@@ -389,7 +387,7 @@ body::-webkit-scrollbar {
 
 .sideProject h1{
     width: 90%;
-    margin: 0px;
+    margin: 10px 0px 0px 0px;
 }
 .sideProject h2{
     width: 90%;
@@ -471,7 +469,63 @@ body::-webkit-scrollbar {
     scale: 1.03;
 }
 
-/* GLOBAL --------------------------------------------------------------------------------------------------------------------------------- */
+/* Contrateme  --------------------------------------------------------------------------------------------------------------------------------- */
+
+.Contrateme {
+    display: flex;
+    flex-direction: column;
+
+}
+.Contrateme h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.ContratemeArea {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.ContraCard {
+    width: 100%;
+    height: auto;
+    background: var(--gradiente);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: var(--sombra);
+
+}
+
+.ContraCard img {
+    width: 80px;
+    height: 80px;
+}
+
+.ContraCard h1{
+    text-align: center;
+    width: 100%;
+    margin: 0px 0px 3rem 0px;
+
+}
+.ContraCard p{
+    text-align: center;
+    width: 90%;
+    margin: 0px;
+}
+.ContraCard p {
+    margin-bottom: 30px;
+}
+
+/* GLOBAL */
+
 section {
     width: 90%;
     display: flex;
