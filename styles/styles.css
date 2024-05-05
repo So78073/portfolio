@@ -320,18 +320,13 @@ body::-webkit-scrollbar {
 .hubProjet {
     display: flex;
     width: 100%;
-    height: 30px;
-    margin-top: 20px;
+    height: 10px;
+    margin-top: 10px;
+    padding: 0px;
 }
+
 
 .TittleConteinerProjetct {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-content: center;
-}
-
-.TittleConteinerProjetct h1{
     width: 100%;
     margin: 0px;
     text-align: center;
@@ -339,20 +334,31 @@ body::-webkit-scrollbar {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 2em;
+
+ 
 }
 
+
+
+
 .btProjects {
-    width: 5rem;
+    width: auto;
+    height: 100%;
     background-color: #ffffff00;
     border: none;
     margin: 0px 10px 0px 10px;
+    padding: 0px;
 }
 .btProjects:hover {
     scale: 1.1;
 }
 .btProjects img{
-    width: 80%;
+    width: 20px;
+    height: 20px;
     pointer-events: none;
     margin: 0px;
     align-self: center;
@@ -376,6 +382,9 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 30px;
+
+    align-content: center;
+    justify-content: center;
 }
 
 .sideProject h1{
@@ -431,14 +440,6 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.BtconteinerDiv {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-items: end;
-    align-items: end;
-    margin: 0px 0px 3rem 0px;
-}
 
 .btShowProject {
     width: 100%;
@@ -446,7 +447,7 @@ body::-webkit-scrollbar {
     border: none;
     background-image: var(--gradiente);
     border-radius: var(--border-radius);
-    margin: 0px 0px 0rem 0px;
+    margin: 0px 0px 3rem 0px;
     border: 3px solid rgba(0, 0, 0, 0.307);
 
 }
