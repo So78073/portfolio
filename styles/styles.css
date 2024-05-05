@@ -553,6 +553,71 @@ body::-webkit-scrollbar {
     font-size: 1.5em;
 }
 
+
+/* Estilo para o footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px 0px 0px 0px;
+}
+
+h3 {
+    font-size: 20px;
+    font-size: 1em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+footer p, h3{
+    margin-bottom: 10px;
+    font-size: 1em;
+    margin-left: 30px;
+}
+
+ul.social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.social-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.social-media li a {
+    color: #fff;
+    font-size: 20px;
+    font-size: 1em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.bottom-footer {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+.bottom-footer p {
+    margin: 0;
+    font-size: 14px;
+    font-size: 1em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.fab {
+    font-size: 24px;
+}
+
 /* GLOBAL */
 
 section {
