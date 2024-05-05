@@ -389,6 +389,7 @@ body::-webkit-scrollbar {
 
 .sideProject h1{
     width: 90%;
+    margin: 0px;
 }
 .sideProject h2{
     width: 90%;
