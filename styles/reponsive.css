@@ -71,6 +71,10 @@
         flex-direction: column;
     }
 
+    .Contrateme {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 650px) {
