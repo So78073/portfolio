@@ -62,3 +62,14 @@
         }
 }
 
+
+.SetaUpkk {
+        width: 10px;
+        height: 10px;
+        border: 5px solid #ffffff;
+        border-left: 0;
+        border-top: 0;
+        margin: 0px;
+        transform: rotate(225deg);
+        margin-top: 5px;
+}

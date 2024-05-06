@@ -1,9 +1,24 @@
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+document.querySelectorAll('img').forEach(function(img) {
+    img.addEventListener('mousedown', function(e) {
+        if (e.button === 2) {
+            e.preventDefault();
+        }
+    });
+});
+
 const myObserver = new IntersectionObserver(function (entradas) {
     entradas.forEach(function(e) {
+        const idMenuControl = e.target.id;
         if (e.isIntersecting) {
             e.target.classList.add('show')
+            if (idMenuControl === "aboltmeRef") {menuConfig(e.isIntersecting, idMenuControl)}
+
         } else {
             e.target.classList.remove('show')
+            if (idMenuControl === "aboltmeRef") {menuConfig(e.isIntersecting, idMenuControl)}
         }
     })
 });
@@ -13,6 +28,7 @@ const elem = document.querySelectorAll('.hidden');
 elem.forEach( function (e) {
     myObserver.observe(e); 
 })
+
 
 
 let color = ['#e600ff', '#6557ff']
@@ -39,7 +55,6 @@ document.addEventListener('click', function (e) {
         } else {
             sideProjects.forEach(function(elem) {
                 elem.classList.add('animations')
-                
             })
             project.classList.add('flipRanimationR');
         }
@@ -55,6 +70,23 @@ document.addEventListener('click', function (e) {
     }
 });
 
-function reverseColor() {
-    
+document.querySelector('.menuBt').addEventListener('click', function () {
+    const menu = document.querySelector('.UlMenuConfigurator')
+    menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
+})
+
+document.querySelector('.menuBack').addEventListener('click', function () {
+    window.location.href = '#aboltmeRef';
+})
+
+function menuConfig(isOnDisplay) {
+    if (isOnDisplay) {
+        document.querySelector('.menu').style.display = 'flex'
+        document.querySelector('.menuBack').style.display = 'none'
+    } else {
+        document.querySelector('.menu').style.display = 'none'
+        document.querySelector('.menuBack').style.display = 'flex'
+        document.querySelector('.UlMenuConfigurator').style.display = 'none'
+    }
 }
+

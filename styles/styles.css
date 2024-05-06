@@ -66,6 +66,7 @@ body::-webkit-scrollbar {
     margin-top: 10px;
 }
 
+
 /* SECTION 002 -------------------------------------------------------------*/
 .apresentation {
     display: flex;
@@ -473,7 +474,7 @@ body::-webkit-scrollbar {
 .Contrateme {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 
 }
 .Contrateme h1 {
@@ -600,4 +601,95 @@ h1 {
     font-size: 2em;
     text-align: start;
 }
- 
+
+/* Menu -------------------------------------------------------------------- */
+.menu {
+    position: fixed;
+    display: flex;
+    top: 20px;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 10px;
+    margin: 0px 0px 0px 20px;
+    border-radius:  var(--border-radius);
+}
+
+.menuBt {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-image: var(--gradiente);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menuBt img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+.menu ul {
+    width: 25vw;
+    background-color: #1a1b1b;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: var(--border-radius);
+    
+}
+
+.menu ul li {
+    margin: 10px;
+}
+
+.menu ul li a {
+    text-align: start;
+    font-size: 1em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    background: var(--textGradientColor);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.menu ul li a:hover {
+    color: #007bff;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 50px; /* Ajuste para evitar sobreposição com o menu */
+    background-color: #f9f9f9; /* Cor de fundo para visualização */
+}
+
+/* back ini-------------------------------------------------------------------- */
+
+.menuBack {
+    position: fixed;
+    bottom: 20px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
+    z-index: 1000;
+}
+
+.BackBt {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background-image: var(--gradiente);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites do botão */
+}
