@@ -1,4 +1,4 @@
-document.addEventListener('contextmenu', function(e) {
+/*document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
 });
 document.querySelectorAll('img').forEach(function(img) {
@@ -7,7 +7,9 @@ document.querySelectorAll('img').forEach(function(img) {
             e.preventDefault();
         }
     });
-});
+});*/
+
+const elem = document.querySelectorAll('.hidden');
 
 const myObserver = new IntersectionObserver(function (entradas) {
     entradas.forEach(function(e) {
@@ -23,7 +25,7 @@ const myObserver = new IntersectionObserver(function (entradas) {
     })
 });
 
-const elem = document.querySelectorAll('.hidden');
+
 
 elem.forEach( function (e) {
     myObserver.observe(e); 
@@ -34,7 +36,7 @@ elem.forEach( function (e) {
 let color = ['#e600ff', '#6557ff']
 
 document.addEventListener('click', function (e) {
-    const sideProjects = document.querySelectorAll('.sideProject');
+    const sideProjects = document.querySelectorAll('.sideProjectText');
     const root = document.documentElement;
 
     if (e.target.classList.contains('btProjects')) {
@@ -49,7 +51,6 @@ document.addEventListener('click', function (e) {
             sideProjects.forEach(function(elem) {
                 elem.classList.add('animations')
             })
-            
             project.classList.add('flipRanimationL');
 
         } else {
@@ -61,8 +62,10 @@ document.addEventListener('click', function (e) {
         
         
         project.addEventListener('animationend', function() {
+
             this.classList.remove('flipRanimationR');
             this.classList.remove('flipRanimationL');
+
             sideProjects.forEach(function(elem) {
                 elem.classList.remove('animations')
             })
@@ -75,9 +78,8 @@ document.querySelector('.menuBt').addEventListener('click', function () {
     menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
 })
 
-document.querySelector('.menuBack').addEventListener('click', function () {
-    window.location.href = '#aboltmeRef';
-})
+
+
 
 function menuConfig(isOnDisplay) {
     if (isOnDisplay) {
@@ -90,3 +92,9 @@ function menuConfig(isOnDisplay) {
     }
 }
 
+
+document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('BackBt') || e.target.classList.contains('btOcamento')) {
+        window.location.href = '#aboltmeRef';
+    }
+})

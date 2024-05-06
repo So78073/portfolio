@@ -96,6 +96,11 @@
         align-content: center;
         
     }
+
+    .menu ul { 
+        width: 50vw;
+    }
+
 }
 
 @media (max-width: 355px) {

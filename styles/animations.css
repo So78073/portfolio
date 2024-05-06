@@ -8,7 +8,7 @@
 }
 
 .animations {
-        animation: anim 0.6s linear both;
+        animation: anim 1s linear both;
 }
 
 @keyframes flipL {
@@ -54,6 +54,9 @@
         0% {
                opacity: 1;
         }
+        10% {
+                opacity: 0;
+        }
         50% {
                 opacity: 0;
         }
@@ -66,10 +69,41 @@
 .SetaUpkk {
         width: 10px;
         height: 10px;
-        border: 5px solid #ffffff;
         border-left: 0;
         border-top: 0;
         margin: 0px;
         transform: rotate(225deg);
         margin-top: 5px;
+}
+
+
+:root {
+        --width-button: 20px;
+        --show: flex;
+}
+
+.Setaleft {
+        display: var(--show);
+        width: var(--width-button);
+        height: var(--width-button);
+        border: 2px solid #ffffff;
+        border-left: 0;
+        border-top: 0;
+        transform: rotate(135deg);
+        padding: 0px;
+        margin: 0px 0px 0px 10px;
+        pointer-events: none
+      }
+
+.Setaright {
+        display: var(--show);
+        width: var(--width-button);
+        height: var(--width-button);
+        border: 2px solid #ffffff;
+        border-left: 0;
+        border-top: 0;
+        transform: rotate(315deg);
+        padding: 0px;
+        margin: 0px 10px 0px 0px;
+        pointer-events: none
 }
