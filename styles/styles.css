@@ -711,10 +711,13 @@ h1 {
     border-radius: 100%;
     border: none;
     background-image: var(--gradiente);
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites do botão */
+    overflow: hidden; 
+    color: aliceblue;
+    
 }
 
 

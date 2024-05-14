@@ -36,7 +36,9 @@ elem.forEach( function (e) {
 let color = ['#e600ff', '#6557ff']
 
 document.addEventListener('click', function (e) {
-    const sideProjects = document.querySelectorAll('.sideProjectText');
+    const sideProjectTxT = document.querySelectorAll('.sideProjectText');
+    const sideProject = document.querySelectorAll('.sideProject');
+    
     const root = document.documentElement;
 
     if (e.target.classList.contains('btProjects')) {
@@ -46,17 +48,27 @@ document.addEventListener('click', function (e) {
         const novoGradiente = `linear-gradient(to left, ${color[0]}, ${color[1]})`;
         root.style.setProperty('--gradiente2Pronject', novoGradiente);
 
+        console.log(sideProjectTxT);
+
         if (e.target.getAttribute('mode') === "L") {
             
-            sideProjects.forEach(function(elem) {
+            sideProjectTxT.forEach(function(elem) {
                 elem.classList.add('animations')
             })
+            sideProject.forEach(function(elem) {
+                elem.classList.add('animations')
+            })
+
             project.classList.add('flipRanimationL');
 
         } else {
-            sideProjects.forEach(function(elem) {
+            sideProjectTxT.forEach(function(elem) {
                 elem.classList.add('animations')
             })
+            sideProject.forEach(function(elem) {
+                elem.classList.add('animations')
+            })
+
             project.classList.add('flipRanimationR');
         }
         
@@ -66,7 +78,10 @@ document.addEventListener('click', function (e) {
             this.classList.remove('flipRanimationR');
             this.classList.remove('flipRanimationL');
 
-            sideProjects.forEach(function(elem) {
+            sideProject.forEach(function(elem) {
+                elem.classList.remove('animations')
+            })
+            sideProjectTxT.forEach(function(elem) {
                 elem.classList.remove('animations')
             })
         }, { once: true });
