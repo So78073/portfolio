@@ -34,6 +34,9 @@
 }
 
 @media (max-width: 768px) {
+    .Works img {
+        width: 8%;
+    }
     .apresentation {
         display: flex;
         flex-direction: column;
@@ -111,9 +114,7 @@
 }
 
 @media (min-width: 1080px) {
-    .Works img {
-        width: 10%;
-    }
+
 
     .myPhoto {
         margin-left: 50px;
