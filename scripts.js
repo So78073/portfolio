@@ -1,4 +1,13 @@
-
+/*document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+document.querySelectorAll('img').forEach(function(img) {
+    img.addEventListener('mousedown', function(e) {
+        if (e.button === 2) {
+            e.preventDefault();
+        }
+    });
+});*/
 
 const elem = document.querySelectorAll('.hidden');
 
@@ -6,12 +15,13 @@ const myObserver = new IntersectionObserver(function (entradas) {
     entradas.forEach(function(e) {
         const idMenuControl = e.target.id;
         if (e.isIntersecting) {
+            e.target.classList.remove('hidden')
             e.target.classList.add('show')
             if (idMenuControl === "aboltmeRef") {menuConfig(e.isIntersecting, idMenuControl)}
+
         } 
     })
 });
-
 
 
 elem.forEach( function (e) {
@@ -83,16 +93,6 @@ document.querySelector('.menuBt').addEventListener('click', function () {
 
 
 
-function menuConfig(isOnDisplay) {
-    if (isOnDisplay) {
-        document.querySelector('.menu').style.display = 'flex'
-        document.querySelector('.menuBack').style.display = 'none'
-    } else {
-        document.querySelector('.menu').style.display = 'none'
-        document.querySelector('.menuBack').style.display = 'flex'
-        document.querySelector('.UlMenuConfigurator').style.display = 'none'
-    }
-}
 
 
 document.addEventListener('click', function (e) {

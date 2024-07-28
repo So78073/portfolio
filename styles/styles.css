@@ -106,16 +106,25 @@ body::-webkit-scrollbar {
     font-style: normal;
 }
 
-.Works  {
+.nameFirst {
+    font-size: 2.5pc;
+}
+
+.Works {
     width: 50%;
     height: auto;
     filter: var(--sombra);
 }
 
-.Works  a{
+.Works a {
     width: 50%;
     height: auto;
     filter: var(--sombra);
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+
+    align-content: center;
 }
 
 .Works img {
@@ -123,8 +132,8 @@ body::-webkit-scrollbar {
     height: auto;
     filter: var(--sombra);
     border-radius: 0px;
-
 }
+
 
 .Works img:hover {
     scale: 1.1;
@@ -716,7 +725,7 @@ h1 {
 
 /* back ini-------------------------------------------------------------------- */
 
-.menuBack {
+.MenuBack {
     position: fixed;
     bottom: 20px; /* Ajuste conforme necessário */
     right: 20px; /* Ajuste conforme necessário */
