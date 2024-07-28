@@ -1,13 +1,4 @@
-/*document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
-document.querySelectorAll('img').forEach(function(img) {
-    img.addEventListener('mousedown', function(e) {
-        if (e.button === 2) {
-            e.preventDefault();
-        }
-    });
-});*/
+
 
 const elem = document.querySelectorAll('.hidden');
 
@@ -17,11 +8,7 @@ const myObserver = new IntersectionObserver(function (entradas) {
         if (e.isIntersecting) {
             e.target.classList.add('show')
             if (idMenuControl === "aboltmeRef") {menuConfig(e.isIntersecting, idMenuControl)}
-
-        } else {
-            e.target.classList.remove('show')
-            if (idMenuControl === "aboltmeRef") {menuConfig(e.isIntersecting, idMenuControl)}
-        }
+        } 
     })
 });
 
