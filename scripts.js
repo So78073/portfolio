@@ -9,33 +9,35 @@ document.querySelectorAll('img').forEach(function(img) {
     });
 });*/
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('aboltmeRef').classList.add("show")
+    document.getElementById('mySkills').classList.add("show")
+});
+
 const elem = document.querySelectorAll('.hidden');
 
-const myObserver = new IntersectionObserver(function (entradas) {
+const myObserver = new IntersectionObserver(function(entradas) {
     entradas.forEach(function(e) {
         const idMenuControl = e.target.id;
         if (e.isIntersecting) {
-            e.target.classList.remove('hidden')
             e.target.classList.add('show')
-            if (idMenuControl === "aboltmeRef") {menuConfig(e.isIntersecting, idMenuControl)}
-
-        } 
+        }
     })
 });
 
 
-elem.forEach( function (e) {
-    myObserver.observe(e); 
+elem.forEach(function(e) {
+    myObserver.observe(e);
 })
 
 
 
 let color = ['#e600ff', '#6557ff']
 
-document.addEventListener('click', function (e) {
+document.addEventListener('click', function(e) {
     const sideProjectTxT = document.querySelectorAll('.sideProjectText');
     const sideProject = document.querySelectorAll('.sideProject');
-    
+
     const root = document.documentElement;
 
     if (e.target.classList.contains('btProjects')) {
@@ -48,7 +50,7 @@ document.addEventListener('click', function (e) {
         console.log(sideProjectTxT);
 
         if (e.target.getAttribute('mode') === "L") {
-            
+
             sideProjectTxT.forEach(function(elem) {
                 elem.classList.add('animations')
             })
@@ -68,8 +70,8 @@ document.addEventListener('click', function (e) {
 
             project.classList.add('flipRanimationR');
         }
-        
-        
+
+
         project.addEventListener('animationend', function() {
 
             this.classList.remove('flipRanimationR');
@@ -85,7 +87,7 @@ document.addEventListener('click', function (e) {
     }
 });
 
-document.querySelector('.menuBt').addEventListener('click', function () {
+document.querySelector('.menuBt').addEventListener('click', function() {
     const menu = document.querySelector('.UlMenuConfigurator')
     menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
 })
@@ -95,7 +97,7 @@ document.querySelector('.menuBt').addEventListener('click', function () {
 
 
 
-document.addEventListener('click', function (e) {
+document.addEventListener('click', function(e) {
     if (e.target.classList.contains('BackBt') || e.target.classList.contains('btOcamento')) {
         window.location.href = '#aboltmeRef';
     }
