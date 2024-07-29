@@ -4,7 +4,8 @@
     --gradiente2Pronject: linear-gradient(to left, #6557ff, #d000ff);
     --sombra: drop-shadow(0 0 5px #00000073);
     --textGradientColor: linear-gradient(to right, #ffffff, #f1f1f1) text;
-    --background: linear-gradient(to left, #27282a, #27282a); /*27282a*/
+    --background: linear-gradient(to left, #27282a, #27282a);
+    /*27282a*/
 }
 
 body {
@@ -19,24 +20,26 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 5px; 
+    width: 5px;
     background-color: #00000000;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-image: var(--gradiente); 
-    border-radius: 10px; 
-  }
-  
-  body::-webkit-scrollbar-track {
-    background-color: var(--bg-color); 
-  }
-  
-  html {
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: var(--gradiente);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+html {
     scroll-behavior: smooth;
-  }
+}
+
 
 /* SECTION 001 -------------------------------------------------------------*/
+
 .hub {
     margin: 5px 0px 0px 0px;
     width: 80%;
@@ -55,7 +58,7 @@ body::-webkit-scrollbar {
     align-content: center;
 }
 
-.hub a{
+.hub a {
     width: 100%;
     text-align: center;
     color: aliceblue;
@@ -68,15 +71,17 @@ body::-webkit-scrollbar {
 
 
 /* SECTION 002 -------------------------------------------------------------*/
+
 .apresentation {
     display: flex;
 }
 
-.apresentation  h1{
+.apresentation h1 {
     width: 90%;
     margin-left: 55px;
 }
-.apresentation  p{
+
+.apresentation p {
     width: 85%;
     margin-left: 55px;
 }
@@ -96,6 +101,7 @@ body::-webkit-scrollbar {
     gap: 10px;
     margin: 50px 0px 0px 50px;
 }
+
 .destak {
     background: var(--gradiente) text;
     -webkit-background-clip: text;
@@ -121,9 +127,8 @@ body::-webkit-scrollbar {
     height: auto;
     filter: var(--sombra);
     display: flex;
-    justify-content: center;  
-    align-items: center;      
-
+    justify-content: center;
+    align-items: center;
     align-content: center;
 }
 
@@ -134,11 +139,11 @@ body::-webkit-scrollbar {
     border-radius: 0px;
 }
 
-
 .Works img:hover {
     scale: 1.1;
     filter: drop-shadow(0 0 3px #a357ff);
 }
+
 
 /* SECTION 003 -------------------------------------------------------------*/
 
@@ -150,9 +155,7 @@ body::-webkit-scrollbar {
     align-content: center;
     gap: 10px;
     margin-top: 50px;
-
 }
-
 
 .SkillCard {
     width: 100%;
@@ -163,7 +166,6 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     filter: var(--sombra);
-
 }
 
 .SkillCard img {
@@ -171,20 +173,22 @@ body::-webkit-scrollbar {
     height: 80px;
 }
 
-.SkillCard h1{
+.SkillCard h1 {
     text-align: center;
     width: 100%;
     margin: 0px 0px 3rem 0px;
-
 }
-.SkillCard p{
+
+.SkillCard p {
     text-align: center;
     width: 90%;
     margin: 0px;
 }
+
 .SkillCard p {
     margin-bottom: 30px;
 }
+
 
 /* SECTION 003 -------------------------------------------------------------*/
 
@@ -201,17 +205,17 @@ body::-webkit-scrollbar {
     margin-left: 4.3vw;
 }
 
-
 .boxCarrer2 {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%; 
+    width: 100%;
     margin-left: 20px;
 }
 
-.boxCarrer2 h1, p {
-    margin: 0px;  
+.boxCarrer2 h1,
+p {
+    margin: 0px;
     width: 90%;
 }
 
@@ -220,7 +224,6 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 10px;
 }
-
 
 .cardcarrer {
     display: flex;
@@ -233,8 +236,7 @@ body::-webkit-scrollbar {
     align-content: center;
 }
 
-
-.cardcarrer h1{
+.cardcarrer h1 {
     font-size: 1em;
     text-align: center;
     width: 90%;
@@ -245,7 +247,6 @@ body::-webkit-scrollbar {
 
 /* SECTION 04 --------------------------------------------------------------*/
 
-
 .skills {
     display: flex;
     width: 100%;
@@ -254,7 +255,7 @@ body::-webkit-scrollbar {
     margin: 2rem 3.5vw 0px 3.5vw;
 }
 
-.skills h1{
+.skills h1 {
     width: 95%;
 }
 
@@ -276,7 +277,6 @@ body::-webkit-scrollbar {
     display: flex;
 }
 
-
 .card {
     display: flex;
     width: 100%;
@@ -286,7 +286,7 @@ body::-webkit-scrollbar {
     filter: var(--sombra);
 }
 
-.card img{
+.card img {
     max-width: 30px;
     max-height: 30px;
     margin-right: 1%;
@@ -305,16 +305,18 @@ body::-webkit-scrollbar {
     height: 25px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .PorcentSkill::-webkit-meter-optimum-value {
-    background-image: var(--gradiente); /* Gradiente verde para a parte preenchida */
+    background-image: var(--gradiente);
+    /* Gradiente verde para a parte preenchida */
     border-radius: 5px;
 }
 
 .PorcentSkill meter::after {
-    content: attr(value) '%'; /* Exibe o valor do medidor seguido de '%' */
+    content: attr(value) '%';
+    /* Exibe o valor do medidor seguido de '%' */
     position: absolute;
     right: 10px;
     top: 50%;
@@ -322,6 +324,7 @@ body::-webkit-scrollbar {
     color: white;
     font-weight: bold;
 }
+
 
 /* SECTION 005 -------------------------------------------------------------*/
 
@@ -331,7 +334,6 @@ body::-webkit-scrollbar {
     margin: 3rem 0px 3rem 0px;
     align-items: center;
     justify-items: center;
-    
 }
 
 .Project {
@@ -354,7 +356,6 @@ body::-webkit-scrollbar {
     padding: 10px;
 }
 
-
 .TittleConteinerProjetct {
     width: 100%;
     margin: 0px;
@@ -369,7 +370,6 @@ body::-webkit-scrollbar {
     font-size: 2em;
 }
 
-
 .btProjects {
     width: 30px;
     height: 30px;
@@ -378,10 +378,12 @@ body::-webkit-scrollbar {
     margin: 0px 10px 0px 10px;
     padding: 0px;
 }
+
 .btProjects:hover {
     scale: 1.1;
 }
-.btProjects img{
+
+.btProjects img {
     width: 20px;
     height: 20px;
     pointer-events: none;
@@ -389,7 +391,10 @@ body::-webkit-scrollbar {
     align-self: center;
     justify-self: center;
 }
+
+
 /* parte principal dos projetos */
+
 .ProjectDivShow {
     width: 90%;
     height: auto;
@@ -407,21 +412,20 @@ body::-webkit-scrollbar {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 30px;
-
     align-content: center;
     justify-content: center;
 }
 
-.sideProject h1{
+.sideProject h1 {
     width: 90%;
     margin: 10px 0px 0px 0px;
 }
-.sideProject h2{
+
+.sideProject h2 {
     width: 90%;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-
     background: var(--textGradientColor);
     -webkit-background-clip: text;
     background-clip: text;
@@ -442,7 +446,6 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-items: center;
     margin: 20px 0px 0px 0px;
-    
 }
 
 .ImgProject {
@@ -460,12 +463,12 @@ body::-webkit-scrollbar {
     width: 100%;
     border-radius: var(--border-radius);
 }
+
 .imgProjSecond {
     width: 100%;
     border-radius: var(--border-radius);
     display: none;
 }
-
 
 .btShowProject {
     width: 100%;
@@ -475,8 +478,8 @@ body::-webkit-scrollbar {
     border-radius: var(--border-radius);
     margin: 0px 0px 3rem 0px;
     border: 3px solid rgba(0, 0, 0, 0.307);
-
 }
+
 .btShowProject p {
     font-size: 1.5em;
     width: 100%;
@@ -489,12 +492,12 @@ body::-webkit-scrollbar {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-
 }
 
 .btShowProject:hover {
     scale: 1.03;
 }
+
 
 /* Contrateme  ------------------------------------------------------------- */
 
@@ -502,8 +505,8 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
-
 }
+
 .Contrateme h1 {
     display: flex;
     justify-content: center;
@@ -529,7 +532,6 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     filter: var(--sombra);
-
 }
 
 .ContraCard img {
@@ -538,14 +540,13 @@ body::-webkit-scrollbar {
     margin-top: 20px;
 }
 
-.ContraCard h1{
+.ContraCard h1 {
     text-align: center;
     width: 100%;
     margin: 0px 0px 0rem 0px;
 }
 
-
-.ContraCard p{
+.ContraCard p {
     text-align: center;
     width: 80%;
     height: 100%;
@@ -559,7 +560,6 @@ body::-webkit-scrollbar {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-
 }
 
 .xPriceRight {
@@ -568,7 +568,6 @@ body::-webkit-scrollbar {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-
 }
 
 .recomendado {
@@ -604,12 +603,12 @@ body::-webkit-scrollbar {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-
 }
 
 .btOcamento:hover {
     scale: 1.03;
 }
+
 
 /* GLOBAL */
 
@@ -622,7 +621,6 @@ section {
     align-self: center;
     padding: 0px;
     margin-top: 1rem;
-    
 }
 
 header {
@@ -632,21 +630,19 @@ header {
     align-items: center;
 }
 
- p {
+p {
     text-align: start;
     font-size: 1em;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-
     background: var(--textGradientColor);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-  }
+}
 
 h1 {
-    
     background: var(--textGradientColor);
     -webkit-background-clip: text;
     background-clip: text;
@@ -658,7 +654,9 @@ h1 {
     text-align: start;
 }
 
+
 /* Menu -------------------------------------------------------------------- */
+
 .menu {
     position: fixed;
     display: flex;
@@ -667,7 +665,7 @@ h1 {
     border-radius: 5px;
     gap: 10px;
     margin: 0px 0px 0px 20px;
-    border-radius:  var(--border-radius);
+    border-radius: var(--border-radius);
 }
 
 .menuBt {
@@ -688,7 +686,6 @@ h1 {
     object-fit: cover;
 }
 
-
 .menu ul {
     width: 30vw;
     background-color: #1a1b1b;
@@ -699,7 +696,6 @@ h1 {
     justify-content: center;
     gap: 10px;
     border-radius: var(--border-radius);
-    
 }
 
 .menu ul li {
@@ -723,12 +719,15 @@ h1 {
     color: #d000ff;
 }
 
+
 /* back ini-------------------------------------------------------------------- */
 
 .MenuBack {
     position: fixed;
-    bottom: 20px; /* Ajuste conforme necessário */
-    right: 20px; /* Ajuste conforme necessário */
+    bottom: 20px;
+    /* Ajuste conforme necessário */
+    right: 20px;
+    /* Ajuste conforme necessário */
     z-index: 1000;
 }
 
@@ -742,16 +741,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
     color: aliceblue;
-    
 }
 
 
-
-
 /* flooter end -------------------------------------------------------------*/
-
 
 .footer {
     bottom: 0;
