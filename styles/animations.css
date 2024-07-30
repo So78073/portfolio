@@ -80,7 +80,7 @@
         border: 2px solid #ffffff;
         border-left: 0;
         border-top: 0;
-      
+        overflow: hidden;
         transform: rotate(225deg);
 }
 
