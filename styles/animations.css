@@ -81,6 +81,7 @@
         border-left: 0;
         border-top: 0;
         pointer-events: none;
+        overflow: hidden;
         transform: rotate(225deg);
 }
 
