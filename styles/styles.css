@@ -6,7 +6,7 @@
     --textGradientColor: linear-gradient(to right, #ffffff, #f1f1f1) text;
     --background: linear-gradient(to left, #27282a, #27282a);
     --hoverVar: 1.01;
-    --fontSizeMid: 1.2pc;
+    --fontSizeMid: 1.05em;
     /*27282a*/
 }
 
