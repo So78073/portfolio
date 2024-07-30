@@ -34,8 +34,16 @@
 }
 
 @media (max-width: 768px) {
+    .Works {
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        margin: 50px 0px 0px 0px;
+    }
+
     .Works img {
-        width: 8%;
+        width: 25%;
+        align-self: center;
     }
     .apresentation {
         display: flex;
@@ -57,12 +65,7 @@
 
     }
     
-    .Works {
-        width: 100%;
-        align-content: center;
-        justify-content: center;
-        margin: 50px 0px 0px 0px;
-    }
+    
 
     .skills {
     margin: 0px 5vw 0px 5vw;
