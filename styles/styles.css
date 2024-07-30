@@ -6,6 +6,7 @@
     --textGradientColor: linear-gradient(to right, #ffffff, #f1f1f1) text;
     --background: linear-gradient(to left, #27282a, #27282a);
     --hoverVar: 1.01;
+    --fontSizeMid: 1.2pc;
     /*27282a*/
 }
 
@@ -162,6 +163,10 @@ html {
     margin-top: 50px;
 }
 
+.prgf {
+    font-size: var(--fontSizeMid);
+}
+
 .SkillCard {
     width: 100%;
     height: auto;
@@ -171,6 +176,10 @@ html {
     flex-direction: column;
     align-items: center;
     filter: var(--sombra);
+}
+
+.SkillCard p {
+    font-size: var(--fontSizeMid);
 }
 
 .SkillCard img {
@@ -419,6 +428,7 @@ p {
 
 .sideProject h1 {
     width: 90%;
+    font-size: 3pc;
     margin: 10px 0px 0px 0px;
 }
 
@@ -427,10 +437,15 @@ p {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 2pc;
     background: var(--textGradientColor);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.sideProject p {
+    font-size: var(--fontSizeMid);
 }
 
 .classTextRevers {
