@@ -41,6 +41,10 @@
         margin: 50px 0px 0px 0px;
     }
 
+    .Works a {
+        width: 200px;
+    }
+
     .Works img {
         width: 25%;
         align-self: center;
