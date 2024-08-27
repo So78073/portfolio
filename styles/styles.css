@@ -6,7 +6,7 @@
     --textGradientColor: linear-gradient(to right, #ffffff, #f1f1f1) text;
     --background: linear-gradient(to left, #27282a, #27282a);
     --hoverVar: 1.01;
-    --fontSizeMid: 1.2pc;
+    --fontSizeMid: 1.05em;
     /*27282a*/
 }
 
@@ -116,10 +116,13 @@ html {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
+    font-size: 4vw;
+    white-space: nowrap;
 }
 
 .nameFirst {
-    font-size: 2.5pc;
+    font-size: 3.5vw;
+    white-space: nowrap;
 }
 
 .Works {
@@ -494,6 +497,10 @@ p {
     border-radius: var(--border-radius);
     margin: 0px 0px 3rem 0px;
     border: 3px solid rgba(0, 0, 0, 0.307);
+}
+
+.btShowProject:hover {
+    scale: var(--hoverVar);
 }
 
 .btShowProject p {

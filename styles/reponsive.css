@@ -42,7 +42,7 @@
     }
 
     .Works img {
-        width: 25%;
+        width: 45%;
         align-self: center;
     }
     .apresentation {
@@ -64,8 +64,16 @@
         width: 50%;
 
     }
+
+
+    .nameFirst {
+        font-size: 5vw;
+    }
     
-    
+    .destak {
+        font-size: 5.5vw;
+    }
+ 
 
     .skills {
     margin: 0px 5vw 0px 5vw;
@@ -103,6 +111,15 @@
         
     }
 
+    .nameFirst {
+        font-size: 6vw;
+    }
+    
+    .destak {
+        font-size: 6.5vw;
+    }
+
+
     .menu ul { 
         width: 50vw;
     }
@@ -113,7 +130,21 @@
     .boxCarrer1 {
         flex-direction: column;
     }
+    .Works img {
+        width: 70%;
+        align-self: center;
+    }
 
+    .nameFirst {
+        font-size: 7vw;
+    }
+    
+    .destak {
+        font-size: 7.5vw;
+    }
+
+
+  
 }
 
 @media (min-width: 1080px) {
