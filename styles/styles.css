@@ -6,7 +6,7 @@
     --textGradientColor: linear-gradient(to right, #ffffff, #f1f1f1) text;
     --background: linear-gradient(to left, #27282a, #27282a);
     --hoverVar: 1.01;
-    --fontSizeMid: 1.05em;
+    --fontSizeMid: 1.3em;
     /*27282a*/
 }
 
@@ -570,11 +570,12 @@ p {
     width: 80%;
     height: 100%;
     margin: 10px 0px 10px;
+    font-size: var(--fontSizeMid);
 }
 
 .price {
     color: aliceblue;
-    font-size: 1.5em;
+    font-size: 2em;
     justify-self: end;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
