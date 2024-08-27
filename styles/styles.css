@@ -1,13 +1,14 @@
 :root {
-    --border-radius: 5px;
+    
     --gradiente: linear-gradient(to left, #6557ff, #d000ff);
     --gradiente2Pronject: linear-gradient(to left, #6557ff, #d000ff);
     --sombra: drop-shadow(0 0 5px #00000073);
     --textGradientColor: linear-gradient(to right, #ffffff, #f1f1f1) text;
     --background: linear-gradient(to left, #27282a, #27282a);
+
     --hoverVar: 1.01;
     --fontSizeMid: 1.3em;
-    /*27282a*/
+    --border-radius: 5px;
 }
 
 body {
@@ -777,3 +778,4 @@ h1 {
     width: 80%;
     margin: 0 auto;
 }
+
