@@ -417,6 +417,7 @@ p {
     display: flex;
     justify-content: center;
     align-content: center;
+    padding: 30px;
 }
 
 .sideProject {
@@ -432,8 +433,8 @@ p {
 
 .sideProject h1 {
     width: 90%;
-    font-size: 3pc;
-    margin: 10px 0px 0px 0px;
+    font-size: 6vw;
+    margin: 10px 0px 50px 0px;
 }
 
 .sideProject h2 {
@@ -466,7 +467,15 @@ p {
     align-items: center;
     justify-items: center;
     margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    
 }
+
+
+
 
 .ImgProject {
     width: 100%;
@@ -477,6 +486,7 @@ p {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    
 }
 
 .imgProj {
@@ -488,21 +498,33 @@ p {
     width: 100%;
     border-radius: var(--border-radius);
     display: none;
+    justify-self: center;
+    align-self: center;
 }
 
 .btShowProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
     height: 50px;
     border: none;
     background-image: var(--gradiente);
     border-radius: var(--border-radius);
-    margin: 0px 0px 3rem 0px;
-    border: 3px solid rgba(0, 0, 0, 0.307);
+    margin: 0 0 3rem 0;
+    border: 2px solid rgb(0, 0, 0);
+    text-decoration: none;
+    color: white; /* Ajuste a cor do texto conforme necessário */
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .btShowProject:hover {
-    scale: var(--hoverVar);
+    cursor: pointer;
+    scale: 1.01;
 }
+
 
 .btShowProject p {
     font-size: 1.5em;
