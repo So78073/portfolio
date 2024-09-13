@@ -32,7 +32,7 @@ elem.forEach(function(e) {
 
 
 
-let color = ['#e600ff', '#6557ff']
+let color = ['#333', '#555'] 
 
 document.addEventListener('click', function(e) {
     const sideProjectTxT = document.querySelectorAll('.sideProjectText');

@@ -1,16 +1,16 @@
 :root {
-    
-    --gradiente: linear-gradient(to left, #6557ff, #d000ff);
-    --gradiente2Pronject: linear-gradient(to left, #6557ff, #d000ff);
+    --gradiente: linear-gradient(to left, #333, #555);
+    --fontColor: #ffffff;
+    --gradiente2Pronject: linear-gradient(to left, #333, #555);
     --sombra: drop-shadow(0 0 5px #00000073);
     --textGradientColor: linear-gradient(to right, #ffffff, #f1f1f1) text;
-    --background: linear-gradient(to left, #27282a, #27282a);
+    --background: linear-gradient(to left, #1a1a1a, #1a1a1a);
 
     --hoverVar: 1.01;
-    --fontSizeMid: 1.3em;
+    --fontSizeMid: 1vw;
+
     --border-radius: 5px;
 }
-
 body {
     width: 100%;
     margin: 0px;
@@ -100,7 +100,7 @@ html {
     justify-self: center;
     align-self: center;
     margin-left: 50px;
-    filter: drop-shadow(0 0 5px #a357ff);
+    filter: drop-shadow(1 1 1px #000000);
 }
 
 .Works {
@@ -110,10 +110,7 @@ html {
 }
 
 .destak {
-    background: var(--gradiente) text;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--fontColor);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
@@ -221,6 +218,9 @@ html {
     display: flex;
     gap: 10px;
     margin-left: 4.3vw;
+    align-self: center;
+    justify-self: center;
+    
 }
 
 .boxCarrer2 {
@@ -241,6 +241,10 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-self: center;
+    justify-self: center;
+    
+
 }
 
 .cardcarrer {
@@ -265,83 +269,7 @@ p {
 
 /* SECTION 04 --------------------------------------------------------------*/
 
-.skills {
-    display: flex;
-    width: 100%;
-    gap: 5px;
-    flex-direction: column;
-    margin: 2rem 3.5vw 0px 3.5vw;
-}
 
-.skills h1 {
-    width: 95%;
-}
-
-.skilldivConfigure {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.skilldivConfigure2 {
-    display: flex;
-    width: 100%;
-    gap: 20px;
-}
-
-.ResponsiveDivConfigurations {
-    width: 100%;
-    display: flex;
-}
-
-.card {
-    display: flex;
-    width: 100%;
-    height: 30px;
-    align-items: center;
-    justify-items: center;
-    filter: var(--sombra);
-}
-
-.card img {
-    max-width: 30px;
-    max-height: 30px;
-    margin-right: 1%;
-}
-
-.card h2 {
-    font-size: 1.2em;
-    margin-left: 1%;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
-.PorcentSkill {
-    width: 100%;
-    height: 25px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.PorcentSkill::-webkit-meter-optimum-value {
-    background-image: var(--gradiente);
-    /* Gradiente verde para a parte preenchida */
-    border-radius: 5px;
-}
-
-.PorcentSkill meter::after {
-    content: attr(value) '%';
-    /* Exibe o valor do medidor seguido de '%' */
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-weight: bold;
-}
 
 
 /* SECTION 005 -------------------------------------------------------------*/
@@ -378,10 +306,7 @@ p {
     width: 100%;
     margin: 0px;
     text-align: center;
-    background: var(--textGradientColor);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--fontColor);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
@@ -393,7 +318,7 @@ p {
     height: 30px;
     background-color: #ffffff00;
     border: none;
-    margin: 0px 10px 0px 10px;
+    margin: 50px 50px ;
     padding: 0px;
 }
 
@@ -433,7 +358,7 @@ p {
 
 .sideProject h1 {
     width: 90%;
-    font-size: 6vw;
+    font-size: 5vw;
     margin: 10px 0px 50px 0px;
 }
 
@@ -443,10 +368,7 @@ p {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 2pc;
-    background: var(--textGradientColor);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--fontColor);
 }
 
 .sideProject p {
@@ -470,23 +392,20 @@ p {
     display: flex;
     justify-content: center;
     align-content: center;
+    
 
     
 }
 
-
-
-
-.ImgProject {
+.imageProjectConfigurations img {
     width: 100%;
     height: 100%;
-    border-radius: var(--border-radius);
+    border-radius: 3%;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    
 }
 
 .imgProj {
@@ -510,10 +429,10 @@ p {
     width: 100%;
     height: 50px;
     border: none;
-    background-image: var(--gradiente);
+    background-color: #00000044;
     border-radius: var(--border-radius);
     margin: 0 0 3rem 0;
-    border: 2px solid rgb(0, 0, 0);
+
     text-decoration: none;
     color: white; /* Ajuste a cor do texto conforme necessário */
     font-size: 1rem;
@@ -531,10 +450,7 @@ p {
     width: 100%;
     text-align: center;
     margin: 0px;
-    background: var(--textGradientColor);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--fontColor);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
@@ -574,12 +490,14 @@ p {
     flex-direction: column;
     align-items: center;
     filter: var(--sombra);
+    
 }
 
 .ContraCard img {
     width: 80px;
     height: 80px;
     margin-top: 20px;
+    
 }
 
 .ContraCard h1 {
@@ -639,10 +557,7 @@ p {
     width: 100%;
     text-align: center;
     margin: 0px;
-    background: var(--textGradientColor);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--fontColor);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
@@ -659,7 +574,7 @@ section {
     justify-self: center;
     align-self: center;
     padding: 0px;
-    margin-top: 1rem;
+    margin: 2rem 0rem 2rem 0rem;
 }
 
 header {
@@ -675,22 +590,20 @@ p {
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-    background: var(--textGradientColor);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--fontColor);
+    margin: 0px;
+    padding: 0px;
 }
 
 h1 {
-    background: var(--textGradientColor);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 2em;
     text-align: start;
+    color: var(--fontColor);
+    margin: 0px;
+    padding: 0px;
 }
 
 
