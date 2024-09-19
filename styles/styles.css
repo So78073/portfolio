@@ -258,6 +258,13 @@ p {
     align-content: center;
 }
 
+.selectedKill {
+    background-image: linear-gradient(to right, #6d6d6d, #777777); /* Azul brilhante */
+    filter: brightness(1.2);
+    
+}
+
+
 .cardcarrer h1 {
     font-size: 1em;
     text-align: center;

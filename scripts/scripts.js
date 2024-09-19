@@ -1,13 +1,9 @@
-/*document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
-document.querySelectorAll('img').forEach(function(img) {
-    img.addEventListener('mousedown', function(e) {
-        if (e.button === 2) {
-            e.preventDefault();
-        }
-    });
-});*/
+
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('aboltmeRef').classList.add("show")
@@ -37,6 +33,7 @@ let color = ['#333', '#555']
 document.addEventListener('click', function(e) {
     const sideProjectTxT = document.querySelectorAll('.sideProjectText');
     const sideProject = document.querySelectorAll('.sideProject');
+
 
     const root = document.documentElement;
 
@@ -92,13 +89,12 @@ document.querySelector('.menuBt').addEventListener('click', function() {
     menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
 })
 
-
-
-
-
-
 document.addEventListener('click', function(e) {
     if (e.target.classList.contains('BackBt') || e.target.classList.contains('btOcamento')) {
         window.location.href = '#aboltmeRef';
     }
 })
+
+
+
+

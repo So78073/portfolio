@@ -2,6 +2,26 @@ let pathArray = 0
 
 console.log('ajshdkajsghd');
 
+const skills = [
+    {
+        tittle: '> Minha carreira _',
+        text: 'Desde os 10 anos, quando tive minha primeira interação com o PyCharm, descobri minha paixão por programação. Desde então, venho me dedicando a explorar e aprender novas tecnologias constantemente. Estou sempre em busca de aperfeiçoar minhas habilidades, seja desenvolvendo projetos, estudando novas linguagens ou testando ferramentas inovadoras. A tecnologia é mais do que uma carreira para mim, é uma jornada contínua de aprendizado e descoberta. Desde os 10 anos, estudo a área de tecnologia, começando com minha primeira experiência no PyCharm. Estou sempre em busca de aprender novas tecnologias e melhorar minhas habilidades para me manter atualizado no campo da programação e desenvolvimento.'
+    }, 
+    {
+        tittle: '> Ferramentas _',
+        text: 'Desde os 10 anos, quando tive minha primeira interação com o PyCharm, descobri minha paixão por programação. Desde então, venho me dedicando a explorar e aprender novas tecnologias constantemente. Estou sempre em busca de aperfeiçoar minhas habilidades, seja desenvolvendo projetos, estudando novas linguagens ou testando ferramentas inovadoras. A tecnologia é mais do que uma carreira para mim, é uma jornada contínua de aprendizado e descoberta. Desde os 10 anos, estudo a área de tecnologia, começando com minha primeira experiência no PyCharm. Estou sempre em busca de aprender novas tecnologias e melhorar minhas habilidades para me manter atualizado no campo da programação e desenvolvimento.'
+    },
+    {
+        tittle: '> Contribuições _',
+        text: 'Estou constantemente envolvido em ajudar a comunidade de tecnologia, compartilhando conhecimentos e colaborando em projetos. Além disso, mantenho meus projetos atualizados no GitHub, garantindo que minha contribuição para a comunidade esteja sempre em evolução e alinhada com as melhores práticas.'
+    },
+    {
+        tittle: '> I love this ^^ _',
+        text: 'Como desenvolvedor, estou sempre em busca de evolução e aprimoramento. Dedico-me a aprender novas tecnologias, atualizar meus projetos no GitHub e colaborar com a comunidade. Meu objetivo é avançar na carreira, contribuindo com soluções inovadoras e mantendo-me à frente das tendências do setor.'
+    }
+];
+
+
 
 const projects = [
     {
@@ -38,11 +58,15 @@ const projects = [
 ]
 
 document.addEventListener('click', function (e) {
-    console.clear()
     if (e.target.classList.contains('btProjects')) {
 
         pathArray = e.target.getAttribute('mode') === "L" ? pathArray + 1  : pathArray - 1;
+        
         pathArray = pathArray > (projects.length - 1) ? 0 : pathArray
+        if (pathArray < 0) {
+            pathArray = projects.length - 1
+        }
+        
 
 
         setTimeout(function() {
@@ -65,4 +89,29 @@ function RenderProjectSequence(objProject) {
     link = document.getElementById('linkHook').href = objProject.link
 
 }
+
+
+
+
+
+function selectedSkill(key) {
+    let dc = document.querySelectorAll('.cardcarrer');
+
+    dc.forEach(card => card.classList.remove('selectedKill'));
+
+    dc[key].classList.add('selectedKill');
+
+    let titleElement = document.getElementById('titleSkills');
+    let textElement = document.getElementById('textSkills');
+
+    if (titleElement && skills[key]) {
+
+        titleElement.innerText = skills[key].tittle;
+        textElement.innerText = skills[key].text;
+    } else {
+        console.error('Elemento ou dados inválidos.');
+}
+}
+
+
 

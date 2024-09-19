@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
 
-    <link rel="stylesheet" href="https://so78073.github.io/portfolio/styles/styles.css">
-    <link rel="stylesheet" href="https://so78073.github.io/portfolio/styles/animations.css">
-    <link rel="stylesheet" href="https://so78073.github.io/portfolio/styles/reponsive.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/reponsive.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/So78073/ShizuDevWorks/7996d0c05acd89624d1ce29b5141e325b419d2fb/public/assets/ShizuDevWorksLogo.svg" type="image/x-icon">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
@@ -63,27 +65,28 @@
         <div class="carrer">
 
             <div class="boxCarrer1">
+                
                 <div class="separateCardCarrer">
-                    <div class="cardcarrer scaleEffects">
+                    <button class="cardcarrer scaleEffects selectedKill"  onclick="selectedSkill(0)">
                         <h1 class="prgf">11<br>Anos desenvolvendo</h1>
-                    </div>
-                    <div class="cardcarrer scaleEffects">
+                    </button>
+                    <button class="cardcarrer scaleEffects"  onclick="selectedSkill(1)">
                         <h1 class="prgf">200+<br>Contribuições</h1>
-                    </div>
+                    </button>
                 </div>
                 <div class="separateCardCarrer">
-                    <div class="cardcarrer scaleEffects">
+                    <button class="cardcarrer scaleEffects"  onclick="selectedSkill(2)">
                         <h1 class="prgf">19+<br>domínio de ferramentas</h1>
-                    </div>
-                    <div class="cardcarrer scaleEffects">
-                        <h1 class="prgf">Paixão pelo oque faço!</h1>
-                    </div>
+                    </button>
+                    <button class="cardcarrer scaleEffects"  onclick="selectedSkill(3)">
+                        <h1 class="prgf">Paixão pelo o que faço!</h1>
+                    </button>
                 </div>
             </div>
 
             <div class="boxCarrer2">
-                <h1> <span class="destak">> Minha carreira _</span></h1>
-                <p class="prgf">Sempre busco aprender pelo menos duas coisas novas no dia a dia, seja relacionado a códigos ou questões cotidianas. Gosto de participar de eventos de tecnologia e adoraria ingressar na área como desenvolvedor full stack.</p>
+                <h1> <span class="destak" id="titleSkills"> > Minha carreira _</span></h1>
+                <p class="prgf" id="textSkills">Desde os 10 anos, estudo a área de tecnologia, começando com minha primeira experiência no PyCharm. Estou sempre em busca de aprender novas tecnologias e melhorar minhas habilidades para me manter atualizado no campo da programação e desenvolvimento.</p>
             </div>
 
 
@@ -177,8 +180,8 @@
 
 
 
-    <script src="https://so78073.github.io/portfolio/scripts/scripts.js"></script>
-    <script src="https://so78073.github.io/portfolio/scripts/projects.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/projects.js"></script>
 
 
 </body>
