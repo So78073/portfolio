@@ -314,21 +314,22 @@ p {
 }
 
 .btProjects {
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff00;
+    width: 50px; /* Aumente a largura */
+    height: 50px; /* Aumente a altura */
+    background-color: #ff000000;
     border: none;
-    margin: 50px 50px ;
-    padding: 0px;
+    padding: 5px; /* Adicione um pouco de padding */
+    margin: 10px; /* Reduza o margin */
+    cursor: pointer; /* Adiciona o cursor para destacar que é clicável */
+    display: flex; /* Use flex para centralizar o conteúdo */
+    align-items: center;
+    justify-content: center;
 }
 
 .btProjects img {
     width: 20px;
     height: 20px;
-    pointer-events: none;
-    margin: 0px;
-    align-self: center;
-    justify-self: center;
+    pointer-events: none; /* Continua impedindo que a imagem capture o clique */
 }
 
 
