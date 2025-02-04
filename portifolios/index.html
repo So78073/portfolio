@@ -20,6 +20,30 @@
     </style>
 </head>
 <body>
-    <iframe src="https://so78073.github.io/portfolio/portifolios/CURRÍCULO shizudev.pdf"></iframe>
+    <iframe id="pdfViewer"></iframe>
+
+    <script>
+        // Função para obter parâmetros da URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Mapeamento dos PDFs disponíveis
+        const pdfs = {
+            "max": "CURRÍCULO max.pdf",
+            "shizu": "CURRÍCULO shizu.pdf",
+            "shizudev": "CURRÍCULO shizudev.pdf"
+        };
+
+        // Obtém o valor do parâmetro 'pdf'
+        const pdfName = getQueryParam('pdf');
+
+        // Verifica se o PDF existe no mapeamento e atribui ao iframe
+        const pdfUrl = pdfs[pdfName] ? pdfs[pdfName] : 'https://so78073.github.io/portfolio/portifolios/CURRÍCULO%20shizudev.pdf';
+
+        // Define a URL do PDF no iframe
+        document.getElementById('pdfViewer').src = pdfUrl;
+    </script>
 </body>
 </html>
