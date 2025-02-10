@@ -31,16 +31,16 @@
 
         // Mapeamento dos PDFs disponíveis
         const pdfs = {
-            "CURRÍCULO max.pdf": "CURRÍCULO%20max.pdf",
-            "CURRÍCULO shizu.pdf": "CURRÍCULO%20shizu.pdf",
-            "CURRÍCULO shizudev.pdf": "CURRÍCULO%20shizudev.pdf"
+            "CURRÍCULO%20max.pdf": "CURRÍCULO%20max.pdf",
+            "CURRÍCULO%20shizu.pdf": "CURRÍCULO%20shizu.pdf",
+            "CURRÍCULO%20shizudev.pdf": "CURRÍCULO%20shizudev.pdf"
         };
 
         // Obtém o valor do parâmetro 'pdf'
         const pdfName = getQueryParam('pdf');
 
         // Verifica se o PDF existe no mapeamento e atribui ao iframe
-        const pdfUrl = pdfs[pdfName] ? pdfs[pdfName] : 'https://so78073.github.io/portfolio/max/inedx.html';
+        const pdfUrl = pdfs[pdfName] ? pdfs[pdfName] : 'https://so78073.github.io/portfolio/portifolios/CURRÍCULO%max.pdf';
 
         // Define a URL do PDF no iframe
         document.getElementById('pdfViewer').src = pdfUrl;
