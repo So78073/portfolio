@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de PDF</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #121212;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="pdfViewer"></iframe>
+
+    <script>
+        // Função para obter parâmetros da URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Mapeamento dos PDFs disponíveis
+        const pdfs = {
+            "CURRÍCULO max.pdf": "CURRÍCULO%20max.pdf",
+            "CURRÍCULO shizu.pdf": "CURRÍCULO%20shizu.pdf",
+            "CURRÍCULO shizudev.pdf": "CURRÍCULO%20shizudev.pdf"
+        };
+
+        // Obtém o valor do parâmetro 'pdf'
+        const pdfName = getQueryParam('pdf');
+
+        // Verifica se o PDF existe no mapeamento e atribui ao iframe
+        const pdfUrl = pdfs[pdfName] ? pdfs[pdfName] : 'https://so78073.github.io/portfolio/max/inedx.html';
+
+        // Define a URL do PDF no iframe
+        document.getElementById('pdfViewer').src = pdfUrl;
+    </script>
+</body>
+</html>
